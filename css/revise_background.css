@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+}
+.box
+{
+    width: 80%;
+    min-height: 600px;
+    margin: auto;
+    border: 1px solid #000;
+    /* background-color: #4863A0;  by using this we can select only single color*/
+    /* background-image: linear-gradient(45deg,#4863A0,#808000); we can set the color by using this property*/
+
+    /* if i want to set  image as background then we can use the background or background-image */
+    background-image: url(../images/nature_hills.avif);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.box h1{
+    color: white;
+    padding: 10px;
+    margin-top: 100px;
+}

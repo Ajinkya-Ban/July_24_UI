@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.box
+{
+    width: 700px;
+    min-height: 400px;
+    /* background-color: #8E7618; */
+    /* background: linear-gradient(30deg,#000046, #1CB5E0); */
+    margin: auto;
+   
+    background-image: url('../images/nature_hills.avif');
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    border: 1px solid #000;
+    overflow: scroll;
+    background-attachment: fixed;
+
+}
+.login
+{
+    margin-top: 140px;
+    margin-left: 90px;
+    padding: 20px 50px;
+    /* background: linear-gradient(to right, lightblue 50%, #906E3E 50%) left; */
+    background: linear-gradient(135deg, lightblue 50%, #906E3E 50%) right;
+    background-size: 230%;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+}
+.login:hover{
+    background-position: left;
+}
+.box p{
+
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Bootstrap Alert on Hover</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+
+  <style>
+    .alert-position {
+      position: absolute;
+      top: 90px;
+      right: 10px;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.5s ease-in-out; /* Smooth transition */
+      z-index: 1000;
+      margin-right: 120px;
+    }
+
+    .alert-show {
+      opacity: 1; /* Fully visible */
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    .fade-out {
+      animation: fadeOut 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <input 
+      type="text" 
+      id="myInput" 
+      class="form-control" 
+      placeholder="Hover over me!" 
+    />
+  </div>
+
+  <div 
+    id="hoverAlert" 
+    class="alert alert-info alert-position"
+    role="alert"
+  >
+    <p>You hovered over the input field!</p>
+    <p>You hovered over the input field!</p>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+
+  <script>
+    const inputField = document.getElementById('myInput');
+    const hoverAlert = document.getElementById('hoverAlert');
+
+    inputField.addEventListener('mouseover', () => {
+      hoverAlert.classList.remove('fade-out');
+      hoverAlert.classList.add('fade-in');
+      hoverAlert.classList.add('alert-show'); // Make it visible
+    });
+
+    inputField.addEventListener('mouseout', () => {
+      hoverAlert.classList.remove('fade-in');
+      hoverAlert.classList.add('fade-out');
+      setTimeout(() => hoverAlert.classList.remove('alert-show'), 500); // Hide after animation
+    });
+  </script>
+
+</body>
+</html>

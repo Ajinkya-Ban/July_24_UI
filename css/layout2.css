@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.wrapper
+{
+    width: 60%;
+    min-height: 100px;
+    border: 1px solid lightgray;
+    margin: auto;
+
+}
+.header
+{
+    width: 100%;
+    min-height: 60px;
+
+}
+.header .logo{
+
+    width: 48%;
+    min-height: 60px;
+    /* background-color: royalblue; */
+    float: left;
+
+}
+.logo .icon{
+    width: 30%;
+    height: 80px;
+    float: left;
+}
+
+.icon img
+{
+    width: 100%;
+    height: 100%;
+}
+.logo .name{
+    
+    height: 40px;
+}
+.name h2{
+
+    padding: 10px;
+    color: black;
+    float: left;
+    font-size: 1.8em;
+    
+}
+.header .menu{
+
+    width: 50%;
+    height: 60px;
+    background-color: royalblue;
+    float: right;
+    padding-top: 15px;
+
+}
+.menu h3{
+
+    padding: 10px;
+    color: white;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.slider
+{
+    width: 100%;
+    min-height: 300px;
+    /* background-color: gray; */
+    margin-top: 5px;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.main-contents
+{
+    width: 100%;
+    min-height: 400px;
+    margin-top: 5px;
+
+}
+.main-contents .contents{
+
+    width: 78%;
+    min-height: 400px;
+    /* background-color: royalblue; */
+    float: left;
+
+}
+
+.contents .que
+{
+    width: 100%;
+}
+.que h2
+{
+    padding: 10px;
+}
+.ans p{
+
+    padding: 10px;
+    text-align: justify;
+}
+
+.main-contents .sidebar{
+
+    width: 20%;
+    min-height: 400px;
+    background-color: gainsboro;
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.main-box-container{
+
+    width: 100%;
+    min-height: 200px;
+    margin-top: 5px;
+}
+.main-box-container .box{
+
+    width: 24%;
+    height: 200px;
+    background-color: gray;
+    float: left;
+    margin-left: 6px;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: royalblue;
+    margin-top: 5px;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
