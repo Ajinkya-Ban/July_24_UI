@@ -1,0 +1,76 @@
+@import url("reset.css");
+
+.container{
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+    border: 2px solid lightgray;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 60px 200px 300px 60px;
+    grid-gap: 0.6rem;
+    grid-template-areas: "header header header header"
+                        "nav nav nav nav"
+                        "box1 box2 box3 bar"
+                        "cont cont cont bar"
+                        "footer footer footer footer";
+}
+.header{
+    background-color: navy;
+    color: white;
+    grid-area: header;
+}
+.nav{
+    background-color: navy;
+    color: white;
+    grid-area: nav;
+}
+.box1{
+    background-color: black;
+    color: white;
+    grid-area: box1;
+}
+.box2{
+    background-color: black;
+    color: white;
+    grid-area: box2;
+}
+.box3{
+    background-color: black;
+    color: white;
+    grid-area: box3;
+}
+.bar
+{
+    background-color: navy;
+    color: white;
+    grid-area: bar;
+}
+.cont{
+    background-color: navy;
+    color: white;
+    grid-area: cont;
+}
+.footer{
+    background-color: navy;
+    color: white;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px)
+{
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, minmax(100px, min-content));
+        grid-template-areas: "header"
+                                "nav"
+                                "box1"
+                                "box2"
+                                "box3"
+                                "bar"
+                                "cont"
+                                "footer";
+
+    }
+}
